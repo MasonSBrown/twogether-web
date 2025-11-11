@@ -43,6 +43,8 @@ export default function Home() {
         <title>Twogether — Always just a heartbeat away</title>
         <meta name="description" content="Always just a heartbeat away. Stay connected with your partner through intimate home-screen widgets: love notes, photos, distance updates, and shared moments." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
       </Head>

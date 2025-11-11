@@ -41,7 +41,7 @@ export default function Home() {
     <div className={styles.page}>
       <Head>
         <title>Twogether — Always just a heartbeat away</title>
-        <meta name="description" content="Always just a heartbeat away. Stay connected with your partner through beautiful home-screen widgets: love notes, photos, distance updates, and shared moments." />
+        <meta name="description" content="Always just a heartbeat away. Stay connected with your partner through intimate home-screen widgets: love notes, photos, distance updates, and shared moments." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -52,7 +52,7 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroText}>
             <h1 className={styles.headline}>Stay close, even when you’re miles apart.</h1>
-            <p className={styles.subheadline}>Send love notes, photos, and live distance updates through home‑screen widgets designed for couples.</p>
+            <p className={styles.subheadline}>Send love notes, photos, and live distance updates through intimate home‑screen widgets designed for couples.</p>
             <div className={styles.heroCtas}>
               <a className={styles.ctaPrimary} href="https://apps.apple.com" target="_blank" rel="noopener">Download on the App Store</a>
               <a className={styles.ctaGhost} href="#features">Learn More</a>

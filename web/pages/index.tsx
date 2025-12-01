@@ -9,7 +9,7 @@ export default function Home() {
         <title>Twogether — Join the Waitlist</title>
         <meta name="description" content="Always just a heartbeat away. Join the waitlist for the intimate home-screen widget app for couples." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/TwogetherAppIcon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
       </Head>
@@ -19,7 +19,7 @@ export default function Home() {
           {/* Left Column: Content */}
           <div className={styles.contentColumn}>
             <div className={styles.logo}>
-              <img src="/favicon.png" alt="Twogether Logo" width={48} height={48} />
+              <img src="/TwogetherAppIcon.png" alt="Twogether Logo" width={48} height={48} />
               <span className={styles.brandName}>Twogether</span>
             </div>
 
@@ -49,7 +49,7 @@ export default function Home() {
           <div className={styles.visualColumn}>
             <div className={styles.phoneWrapper}>
               <img
-                src="/app-screenshot.png"
+                src="/app-screenshot-framed.png"
                 alt="Twogether App Screenshot"
                 className={styles.appScreenshot}
               />

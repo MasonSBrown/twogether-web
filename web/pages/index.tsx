@@ -30,7 +30,7 @@ export default function Home() {
             </h1>
 
             <p className={styles.subheadline}>
-              Real-time photo widgets, interactive haptic nudges, and instant messaging—all within a shared homescreen.
+              Real-time photo widgets, interactive haptic nudges, and distance tracking—all within a shared homescreen.
             </p>
 
             <div className={styles.waitlistContainer}>

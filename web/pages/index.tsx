@@ -48,13 +48,11 @@ export default function Home() {
           {/* Right Column: Visual */}
           <div className={styles.visualColumn}>
             <div className={styles.phoneWrapper}>
-              {/* TODO: Replace with user's actual screenshot */}
-              <div className={styles.placeholderPhone}>
-                <div className={styles.placeholderContent}>
-                  <span>App Screenshot Placeholder</span>
-                  <small>(Upload your screenshot to replace this)</small>
-                </div>
-              </div>
+              <img
+                src="/app-screenshot.png"
+                alt="Twogether App Screenshot"
+                className={styles.appScreenshot}
+              />
             </div>
           </div>
         </div>

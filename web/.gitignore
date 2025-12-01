@@ -27,3 +27,10 @@ ts-debug.log*
 
 # vercel
 .vercel
+
+# firebase
+.firebase
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+service-account.json

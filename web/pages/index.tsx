@@ -19,7 +19,7 @@ export default function Home() {
           {/* Left Column: Content */}
           <div className={styles.contentColumn}>
             <div className={styles.logo}>
-              <img src="/TwogetherAppIcon.png" alt="Twogether Logo" width={48} height={48} />
+              <img src="/TwogetherAppIcon.png" alt="Twogether Logo" width={48} height={48} className={styles.appIcon} />
               <span className={styles.brandName}>Twogether</span>
             </div>
 
@@ -35,6 +35,10 @@ export default function Home() {
 
             <div className={styles.waitlistContainer}>
               <WaitlistForm />
+            </div>
+
+            <div className={styles.contact}>
+              <a href="mailto:team@jointwogether.com">Contact us: team@jointwogether.com</a>
             </div>
           </div>
 

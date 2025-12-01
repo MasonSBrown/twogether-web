@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { db } from '../lib/firebase';
 import styles from '../styles/WaitlistForm.module.css';
 
 export default function WaitlistForm() {
@@ -20,17 +18,23 @@ export default function WaitlistForm() {
         setStatus('loading');
 
         try {
-            await addDoc(collection(db, 'waitlist'), {
-                email,
-                createdAt: serverTimestamp(),
-                source: 'web_landing'
+            const response = await fetch('/api/waitlist', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email }),
             });
+
+            if (!response.ok) {
+                throw new Error('Submission failed');
+            }
 
             setStatus('success');
             setMessage("You're on the list! We'll be in touch soon.");
             setEmail('');
         } catch (error) {
-            console.error('Error adding document: ', error);
+            console.error('Error submitting form:', error);
             setStatus('error');
             setMessage('Something went wrong. Please try again.');
         }

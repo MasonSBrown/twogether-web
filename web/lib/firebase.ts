@@ -13,6 +13,13 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
+// Debug: Check if config is loaded
+if (!firebaseConfig.apiKey) {
+  console.error('Firebase Config Error: API Key is missing. Did you restart the server after creating .env.local?');
+} else {
+  console.log('Firebase Config Loaded:', { projectId: firebaseConfig.projectId });
+}
+
 // Initialize Firebase
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 const db = getFirestore(app);

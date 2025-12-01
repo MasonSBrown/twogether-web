@@ -18,11 +18,13 @@
   border: 1px solid #e2e8f0;
   font-size: 1rem;
   outline: none;
-  transition: border-color 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .input:focus {
   border-color: var(--brown);
+  box-shadow: 0 0 0 3px rgba(123, 94, 79, 0.15), 0 4px 12px rgba(123, 94, 79, 0.2);
 }
 
 .button {
@@ -35,12 +37,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
-  box-shadow: 0 4px 14px rgba(123, 94, 79, 0.3);
+  box-shadow: 0 4px 14px rgba(123, 94, 79, 0.4), 0 0 20px rgba(123, 94, 79, 0.2);
 }
 
 .button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(123, 94, 79, 0.4);
+  box-shadow: 0 6px 20px rgba(123, 94, 79, 0.5), 0 0 30px rgba(123, 94, 79, 0.3);
   filter: brightness(1.1);
 }
 

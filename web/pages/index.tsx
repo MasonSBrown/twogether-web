@@ -46,7 +46,7 @@ export default function Home() {
           <div className={styles.visualColumn}>
             <div className={styles.phoneWrapper}>
               <img
-                src="/twogetherdemo.png"
+                src="/twogetherdemo2.png"
                 alt="Twogether App Demo"
                 className={styles.appScreenshot}
               />

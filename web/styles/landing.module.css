@@ -120,8 +120,14 @@
 @media (min-width: 900px) {
   .splitLayout {
     flex-direction: row;
-    gap: 80px;
+    gap: 60px;
     height: 90vh;
+    justify-content: center;
+  }
+
+  .contentColumn {
+    flex: 0 1 500px;
+    /* Stop it from stretching too far */
   }
 
   .headline {
@@ -129,6 +135,7 @@
   }
 
   .visualColumn {
-    justify-content: flex-end;
+    flex: 0 1 auto;
+    justify-content: flex-start;
   }
 }

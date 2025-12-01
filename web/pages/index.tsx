@@ -24,24 +24,17 @@ export default function Home() {
             </div>
 
             <h1 className={styles.headline}>
-              Stay close,<br />
-              even when you’re<br />
-              miles apart.
+              Stay connected,<br />
+              no matter the<br />
+              distance.
             </h1>
 
             <p className={styles.subheadline}>
-              Send love notes, photos, and live distance updates through intimate home‑screen widgets designed for couples.
+              Real-time photo widgets, interactive haptic nudges, and instant messaging—all within a shared homescreen.
             </p>
 
             <div className={styles.waitlistContainer}>
               <WaitlistForm />
-            </div>
-
-            <div className={styles.socialProof}>
-              <p>Follow us for updates</p>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                @jointwogether <span className={styles.arrow}>↗</span>
-              </a>
             </div>
           </div>
 
@@ -49,8 +42,8 @@ export default function Home() {
           <div className={styles.visualColumn}>
             <div className={styles.phoneWrapper}>
               <img
-                src="/app-screenshot-framed.png"
-                alt="Twogether App Screenshot"
+                src="/twogetherdemo.png"
+                alt="Twogether App Demo"
                 className={styles.appScreenshot}
               />
             </div>
